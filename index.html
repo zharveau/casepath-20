@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CasePath — Understand your tort claim</title>
+<style>
+:root{--ink:#17251f;--muted:#66746d;--paper:#f7f8f5;--white:#fff;--green:#1d654c;--green2:#dcece4;--line:#e3e8e2;--gold:#c28b3c;--shadow:0 16px 45px rgba(25,48,37,.08)}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.5}button,input,select,textarea{font:inherit}button{cursor:pointer}.topbar{height:72px;background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 max(5vw,24px);position:sticky;top:0;z-index:10}.brand{font-weight:800;letter-spacing:-.7px;font-size:21px;display:flex;align-items:center;gap:10px}.brandmark{width:31px;height:31px;border-radius:9px;background:var(--green);color:white;display:grid;place-items:center;font-weight:800}.nav{display:flex;align-items:center;gap:26px;color:var(--muted);font-size:14px}.nav a{color:inherit;text-decoration:none}.nav a:hover{color:var(--green)}.navbtn,.primary{background:var(--green);color:white;border:0;border-radius:9px;padding:12px 18px;font-weight:650}.navbtn{padding:10px 15px}.primary:hover,.navbtn:hover{background:#164c39}.secondary{border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:9px;padding:11px 17px;font-weight:650}.wrap{max-width:1120px;margin:auto;padding:0 25px}.hero{padding:82px 0 65px;background:linear-gradient(120deg,#f7f8f5 55%,#e9f1eb)}.eyebrow{font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:var(--green);font-weight:800}.hero h1{font-size:clamp(40px,6vw,66px);line-height:1.04;letter-spacing:-2.8px;max-width:720px;margin:18px 0}.hero p{font-size:18px;color:var(--muted);max-width:620px}.hero-actions{display:flex;gap:12px;margin-top:28px;flex-wrap:wrap}.trust{display:flex;gap:24px;flex-wrap:wrap;margin-top:35px;color:var(--muted);font-size:13px}.trust span:before{content:"✓";color:var(--green);font-weight:900;margin-right:8px}.hero-card{margin-top:45px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px;box-shadow:var(--shadow);max-width:650px}.minihead{display:flex;justify-content:space-between;align-items:center;font-size:13px;color:var(--muted)}.progress{height:7px;background:#edf0ec;border-radius:20px;margin:14px 0 18px;overflow:hidden}.progress i{display:block;width:66%;height:100%;background:var(--green);border-radius:20px}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.step{padding:12px;background:#f8faf7;border-radius:10px;font-size:13px}.step b{display:block;margin-bottom:4px}.section{padding:70px 0}.section h2{font-size:34px;letter-spacing:-1.2px;margin:8px 0 12px}.sub{color:var(--muted);max-width:660px}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:17px;margin-top:30px}.card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:23px;box-shadow:0 5px 18px rgba(25,48,37,.03)}.num{width:34px;height:34px;border-radius:10px;background:var(--green2);color:var(--green);display:grid;place-items:center;font-weight:800;margin-bottom:18px}.card h3{margin:0 0 8px}.card p{margin:0;color:var(--muted);font-size:14px}.disclaimer{background:#eef3ed;border:1px solid #dce6dc;padding:18px 20px;border-radius:12px;color:#526259;font-size:13px;margin-top:30px}.workspace{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);overflow:hidden;margin-top:30px}.workhead{padding:22px 25px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:15px;align-items:center}.workhead h3{margin:0}.pill{background:#f1f4f0;color:#526259;border-radius:30px;padding:6px 11px;font-size:12px}.workbody{padding:25px}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:17px}.field{display:flex;flex-direction:column;gap:7px}.field.full{grid-column:1/-1}.field label{font-size:13px;font-weight:700}.field input,.field select,.field textarea{border:1px solid #dce3dc;border-radius:9px;padding:12px;background:#fff;outline:none;color:var(--ink)}.field textarea{min-height:110px;resize:vertical}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--green);box-shadow:0 0 0 3px #1d654c18}.hint{font-size:12px;color:var(--muted)}.filebox{border:1px dashed #b8c8bc;background:#fafcf9;border-radius:10px;padding:18px;text-align:center}.filebox input{max-width:100%}.actions{display:flex;justify-content:space-between;gap:10px;margin-top:22px;flex-wrap:wrap}.hidden{display:none!important}.resultgrid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.metric{background:#f8faf7;border:1px solid var(--line);border-radius:12px;padding:17px}.metric small{color:var(--muted)}.metric strong{display:block;font-size:25px;margin-top:5px;letter-spacing:-.7px}.metric.wide{grid-column:1/-1}.bar{height:9px;background:#e7ece7;border-radius:20px;overflow:hidden;margin-top:10px}.bar span{display:block;height:100%;background:var(--green);width:0}.resultnote{background:#fff8eb;border:1px solid #f0dfbd;color:#715528;border-radius:10px;padding:14px;font-size:13px;margin-top:17px}.footer{background:#17251f;color:#d8e2db;padding:35px 0;margin-top:45px}.footerinner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:13px}.footer .brand{color:white}.toast{position:fixed;bottom:20px;right:20px;background:#17251f;color:#fff;padding:12px 16px;border-radius:9px;display:none;z-index:20}
+@media(max-width:760px){.nav a{display:none}.cards{grid-template-columns:1fr}.formgrid,.resultgrid{grid-template-columns:1fr}.metric.wide{grid-column:auto}.hero{padding:60px 0 45px}.hero h1{letter-spacing:-1.8px}.workhead{align-items:flex-start;flex-direction:column}.steps{grid-template-columns:1fr}.topbar{padding:0 18px}}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="brand"><span class="brandmark">C</span> CasePath</div>
+  <nav class="nav"><a href="#how">How it works</a><a href="#assessment">Case assessment</a><a href="#about">Our approach</a><button class="navbtn" onclick="goToAssessment()">Assess your case</button></nav>
+</header>
+<main>
+<section class="hero">
+ <div class="wrap">
+  <div class="eyebrow">A clearer starting point for tort claims</div>
+  <h1>Understand your potential tort claim before taking the next step.</h1>
+  <p>Organize the facts, identify evidence that may matter in a tort claim, and explore the potential costs of seeking compensation — all in one place.</p>
+  <div class="hero-actions"><button class="primary" onclick="goToAssessment()">Start a case assessment&nbsp; →</button><a href="#how"><button class="secondary">See how it works</button></a></div>
+  <div class="trust"><span>Private case workspace</span><span>Transparent estimates</span><span>Lawyer review encouraged</span></div>
+  <div class="hero-card">
+   <div class="minihead"><b>How CasePath guides you</b><span>3 simple stages</span></div>
+   <div class="progress"><i></i></div>
+   <div class="steps"><div class="step"><b>01 · Tell your story</b><span>Share what happened and upload documents.</span></div><div class="step"><b>02 · Review the details</b><span>Identify possible evidence and information gaps.</span></div><div class="step"><b>03 · Explore costs</b><span>Compare estimates and prepare for legal advice.</span></div></div>
+  </div>
+ </div>
+</section>
+<section class="section" id="how">
+ <div class="wrap">
+  <div class="eyebrow">A more informed first step</div><h2>From uncertainty to a clearer picture.</h2>
+  <p class="sub">CasePath is designed to help you prepare for a conversation with a lawyer — not replace one.</p>
+  <div class="cards">
+   <article class="card"><div class="num">1</div><h3>Build your case file</h3><p>Describe the situation, record key dates and losses, and keep relevant documents together.</p></article>
+   <article class="card"><div class="num">2</div><h3>Understand the evidence</h3><p>Review potentially relevant information, possible gaps, and questions worth discussing with a lawyer.</p></article>
+   <article class="card"><div class="num">3</div><h3>Consider the costs</h3><p>Explore an illustrative recovery range alongside possible legal expenses and alternatives.</p></article>
+  </div>
+ </div>
+</section>
+<section class="section" id="assessment" style="background:#f0f4ef">
+ <div class="wrap">
+  <div class="eyebrow">Your tort claim workspace</div><h2>Start with the harm you experienced.</h2><p class="sub">Describe the harm, who may be responsible, and the losses you experienced. This demo provides an illustrative tort-claim screening only. Do not upload highly sensitive information.</p>
+  <div class="workspace">
+   <div class="workhead"><div><h3 id="formTitle">Case details</h3><span class="hint" id="formStep">Step 1 of 2 · Your situation</span></div><span class="pill">Demo experience</span></div>
+   <div class="workbody">
+    <form id="caseForm">
+     <div id="step1">
+      <div class="formgrid">
+       <div class="field"><label for="category">Type of potential tort</label><select id="category" required><option value="">Choose a category</option><option>Negligence</option><option>Occupiers’ liability</option><option>Motor vehicle accident</option><option>Defamation</option><option>Nuisance</option><option>Trespass to land or person</option><option>Product liability</option><option>Other tort / unsure</option></select></div>
+       <div class="field"><label for="province">Province or territory</label><select id="province"><option>Ontario</option><option>British Columbia</option><option>Alberta</option><option>Quebec</option><option>Manitoba</option><option>Saskatchewan</option><option>Nova Scotia</option><option>New Brunswick</option><option>Other</option></select></div>
+       <div class="field full"><label for="story">What happened, and what harm did you experience?</label><textarea id="story" required placeholder="Describe the incident, the person or organization you believe may be responsible, the harm you experienced, and what outcome you are seeking."></textarea></div>
+       <div class="field"><label for="date">Approximate date of incident</label><input id="date" type="date"></div>
+       <div class="field"><label for="loss">Estimated financial losses (CAD)</label><input id="loss" type="number" min="0" step="0.01" placeholder="e.g. 2500"></div>
+      </div>
+      <div class="actions"><span class="hint">You can use approximate figures.</span><button type="button" class="primary" onclick="nextStep()">Continue →</button></div>
+     </div>
+     <div id="step2" class="hidden">
+      <div class="formgrid">
+       <div class="field full"><label for="evidence">What evidence may support your tort claim?</label><textarea id="evidence" placeholder="For example: photographs, medical or repair records, incident reports, messages, receipts, witness details, or records showing what happened."></textarea></div>
+       <div class="field full"><label for="uploads">Attach supporting files (optional)</label><div class="filebox"><input id="uploads" type="file" multiple accept=".pdf,.png,.jpg,.jpeg,.doc,.docx,.txt"><div class="hint">Files are selected in this demo only; they are not uploaded to a server.</div></div></div>
+       <div class="field"><label for="fees">Possible lawyer fee arrangement</label><select id="fees"><option value="hourly">Hourly billing (illustrative)</option><option value="contingency">Contingency fee (illustrative)</option><option value="unknown">I don't know yet</option></select></div>
+       <div class="field"><label for="hourly">Estimated hourly rate (CAD)</label><input id="hourly" type="number" min="0" value="350"></div>
+      </div>
+      <div class="actions"><button type="button" class="secondary" onclick="prevStep()">← Back</button><button type="submit" class="primary">Generate preliminary tort overview →</button></div>
+     </div>
+    </form>
+    <div id="results" class="hidden">
+      <div style="display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:18px"><div><h3 style="margin:0">Your preliminary tort-claim overview</h3><span class="hint">Illustrative calculations based on the information entered</span></div><span class="pill">Not legal advice</span></div>
+      <div class="resultgrid">
+       <div class="metric"><small>Reported financial losses</small><strong id="rLoss">$0</strong></div>
+       <div class="metric"><small>Illustrative legal cost range</small><strong id="rCost">$0–$0</strong></div>
+       <div class="metric wide"><small>Illustrative loss-minus-cost comparison</small><strong id="rNet">Not calculated</strong><div class="hint">This subtracts estimated legal costs from the financial losses you entered. Financial losses are not automatically recoverable damages, and this is not a valuation of your tort claim.</div></div>
+       <div class="metric wide"><b>Tort evidence preparation checklist</b><p class="hint" id="rEvidence" style="margin-bottom:0"></p></div>
+       <div class="metric wide"><b>Tort-law questions to discuss with a lawyer</b><ul class="hint" id="rQuestions" style="padding-left:19px;margin-bottom:0"></ul></div>
+      </div>
+      <div class="resultnote"><b>Important:</b> This demo does not use an AI model, analyze uploaded files, determine duty, breach, causation or liability, assess defences, calculate tort damages, or estimate the likelihood of success. The figures are simplified examples only. Entered losses are not necessarily recoverable damages. A licensed lawyer must assess applicable law, evidence, limitation periods, recoverable damages, fee arrangements, and the merits of your specific situation.</div>
+      <div class="actions"><button class="secondary" onclick="resetForm()">Start a new assessment</button><button class="primary" onclick="window.print()">Print overview</button></div>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+<section class="section" id="about">
+ <div class="wrap">
+  <div class="eyebrow">Designed with clear boundaries</div><h2>Helpful preparation. Human legal judgment.</h2>
+  <p class="sub">A screening tool can help organize facts and identify questions about duty of care, breach, causation, harm, defences, and evidence. It cannot determine liability or replace advice from a qualified tort lawyer.</p>
+  <div class="disclaimer">CasePath is a tort-law concept demonstration. It does not provide legal advice, determine whether the elements of a tort are established, create a lawyer-client relationship, verify evidence, or connect you to a lawyer. Do not submit confidential or sensitive personal information. Any real deployment should include secure storage, privacy controls, jurisdiction-specific legal review, and qualified legal oversight.</div>
+ </div>
+</section>
+</main>
+<footer class="footer"><div class="wrap footerinner"><div class="brand"><span class="brandmark">C</span> CasePath</div><div>Make your next tort-law step a more informed one.</div><div>© 2026 CasePath · Concept prototype</div></div></footer>
+<div class="toast" id="toast"></div>
+<script>
+const $=id=>document.getElementById(id);
+function goToAssessment(){$('assessment').scrollIntoView({behavior:'smooth'});}
+function nextStep(){if(!$('category').value||!$('story').value.trim()){ $('caseForm').reportValidity(); return; }$('step1').classList.add('hidden');$('step2').classList.remove('hidden');$('formTitle').textContent='Evidence and costs';$('formStep').textContent='Step 2 of 2 · Supporting information';}
+function prevStep(){$('step2').classList.add('hidden');$('step1').classList.remove('hidden');$('formTitle').textContent='Case details';$('formStep').textContent='Step 1 of 2 · Your situation';}
+function money(n){return new Intl.NumberFormat('en-CA',{style:'currency',currency:'CAD',maximumFractionDigits:0}).format(n);}
+$('caseForm').addEventListener('submit',e=>{
+ e.preventDefault();
+ const loss=Math.max(0,Number($('loss').value)||0), rate=Math.max(0,Number($('hourly').value)||350), fee=$('fees').value;
+ let low,high;
+ if(fee==='contingency'){low=500;high=Math.max(1500,loss*.30);}
+ else if(fee==='unknown'){low=750;high=5000;}
+ else {low=rate*3+500;high=rate*12+1800;}
+ const netLow=loss-high,netHigh=loss-low;
+ $('rLoss').textContent=money(loss);
+ $('rCost').textContent=money(low)+'–'+money(high);
+ $('rNet').textContent=money(netLow)+' to '+money(netHigh);
+ const ev=$('evidence').value.trim();
+ $('rEvidence').textContent=ev?`You listed: ${ev} Consider organizing original copies, dates, names of people involved, a timeline, and records of the harm and resulting losses. A lawyer can advise what is relevant and admissible.`:'No specific evidence was listed. Consider whether you have photographs, incident reports, messages, medical or repair records, receipts, a timeline, or witness information that may help establish what happened and the harm that followed.';
+ $('rQuestions').innerHTML='';
+ [`Which tort principles and limitation periods may apply in ${$('province').value}?`,`What evidence may help establish duty, breach, causation, and legally recognized harm?`,`What costs, disbursements, and fee arrangements should I expect?`,`Could negotiation, mediation, or another proportionate resolution process be appropriate?`].forEach(q=>{const li=document.createElement('li');li.textContent=q;$('rQuestions').appendChild(li);});
+ $('step2').classList.add('hidden');$('caseForm').classList.add('hidden');$('results').classList.remove('hidden');$('formTitle').textContent='Assessment overview';$('formStep').textContent='Demo results';
+});
+function resetForm(){$('caseForm').reset();$('caseForm').classList.remove('hidden');$('results').classList.add('hidden');$('step2').classList.add('hidden');$('step1').classList.remove('hidden');$('formTitle').textContent='Case details';$('formStep').textContent='Step 1 of 2 · Your situation';}
+</script>
+</body></html>
